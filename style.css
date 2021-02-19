@@ -1,0 +1,376 @@
+/* Universal Style */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Lato', sans-serif;
+    color: #648880;
+}
+
+h1,
+h2,
+h3,
+p
+{
+    margin-bottom: 1.5rem;
+}
+
+h1
+{
+    font-weight: 300;
+}
+
+h2
+{
+    color: #293f5077;
+    text-transform: uppercase;
+}
+
+h3
+{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+p
+{
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+/* Index Page Style */
+
+.container
+{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header,
+footer
+{
+    background-color: #293f50;
+}
+
+header .container
+{
+    text-align: center;
+}
+
+header li
+{
+    display:inline;
+}
+
+header a
+{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.4rem;
+    padding: 0 0.4rem;
+}
+
+header a:hover
+{
+    background-color: white;
+    color: #293f50;
+    border-radius: 5px;
+}
+.logo
+{
+    border-top: 3px solid gray;
+    color: white;
+    font-weight: 100;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: left;
+    width: 110px;
+    margin: 0 auto 3rem;
+    padding-top: 1rem;
+}
+
+.navigation
+{
+    padding-bottom: 3rem;
+}
+
+.navigation-line
+{
+    font-size: 1rem;
+}
+
+.banner
+{
+    background-color: #293f50;
+    text-align: center;
+    font-size: 2rem;
+    padding: 0 1rem;
+    margin-bottom: 5rem;
+}
+
+.banner h1
+{
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.banner p
+{
+    font-weight: 100;
+}
+
+button
+{
+    border: 1px solid white;
+    background-color: inherit;
+    color: white;
+    padding: 1.5rem 1.8rem;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    margin-bottom: 4rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover
+{
+    background-color: white;
+    color: #293f50;
+    font-size: 1.5rem;
+}
+article
+{
+    margin-bottom: 3rem;
+}
+
+article img
+{
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+footer
+{
+    padding: 3rem 0;
+}
+
+footer li
+{
+    display: inline;
+}
+
+footer a
+{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.2rem;
+    padding: 0 0.2rem;
+    text-transform: capitalize;
+}
+
+footer a:hover
+{
+    background-color: white;
+    color: #293f50;
+    border-radius: 5px;
+}
+.copy-right
+{
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+footer li:first-child a
+{
+    padding-left: 0;
+}
+
+footer .container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Staff Page Style*/
+
+.top-content
+{
+    background-image: linear-gradient(to right, #a1d3b0, #f6f1d3);
+    text-align: center;
+    padding: 3rem;
+    margin-bottom: 3rem;
+}
+
+.top-content h1
+{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.top-content p
+{
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+.staff-logo
+{
+    border-top: 3px solid gray;
+    color: white;
+    font-weight: 100;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: left;
+    width: 110px;
+    margin: 0 auto 3rem;
+    padding-top: 1rem;
+}
+
+.bottom-content h2
+{
+    font-weight: 400;
+}
+
+.bottom-content h3
+{
+    color: lightgray;
+    font-weight: 400;
+}
+
+.bottom-image
+{
+    text-align: center;
+    border: 1px solid gray;
+    margin: 7rem 1rem;
+}
+
+.bottom-image img
+{
+    position: relative;
+    top: -65px;
+    width:150px;
+    border-radius: 100%;
+}
+
+.bottom-lines
+{
+    position: relative;
+    top: -50px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.bottom-lines li
+{
+    list-style-type: none;
+}
+
+/* Media Query */
+
+@media only screen and (min-width: 600px)
+{
+    header .container
+    {
+        display: flex;
+        justify-content: space-between;
+        height: 200px;
+    }
+    .navigation
+    {
+        align-self: flex-end;
+        text-align: right;
+    }
+    .logo
+    {
+        margin:0;
+    }
+    .header a
+    {
+        font-size: 0.9rem;
+    }
+    .navigation-line
+    {
+        font-size: 1.3rem;
+    }
+    .header a:last-child
+    {
+        padding-right: 0;
+    }
+    .banner p
+    {
+        font-size: 1.5rem;
+    }
+    button
+    {
+        font-size: 1rem;
+        padding: 1rem 1.5rem;
+        border-width: 1px;
+    }
+    main .container
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    article
+    {
+        margin: 0 0.5rem;
+    }
+    footer .container
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    footer a
+    {
+        font-size: 1rem;
+    }
+    .staff-logo
+    {
+        border-top: 3px solid gray;
+        color: #648880;
+        font-weight: 100;
+        font-size: 2rem;
+        text-transform: uppercase;
+        text-align: left;
+        width: 110px;
+        margin: 0 auto 3rem;
+        padding-top: 1rem;
+    }
+    .bottom-box
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .staff .container
+    {
+        display: flex;
+        flex-flow: column;
+    }
+    .bottom-image
+    {
+        min-width: 220px;
+        margin-top: 6rem 0;
+    }
+    .bottom-content
+    {
+        margin: 2rem 0;
+    }
+}
